@@ -1,1 +1,1 @@
-# Algorithm_Java
+# Algorithm_코딩테스트 문제 풀기 (JAVA)
