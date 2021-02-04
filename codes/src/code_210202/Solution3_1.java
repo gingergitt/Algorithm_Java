@@ -19,12 +19,11 @@ import java.util.Arrays;
  */
 public class Solution3_1 {
 	public static void main(String[] args) {
-		Solution3_1 sol3 = new Solution3_1();
 		int[] brown = {10,8,24};
 		int[] yellow = {2,1,24};
 		
 		for(int i=0; i<3; i++) {
-			String ans = Arrays.toString(sol3.solution(brown[i], yellow[i]));
+			String ans = Arrays.toString(solution(brown[i], yellow[i]));
 			System.out.println("brown="+brown[i]+" yellow="+yellow[i]+" return="+ans);
 			
 		}

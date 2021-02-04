@@ -1,7 +1,7 @@
 package code_210202;
 
 import java.util.Arrays;
-
+// 5.단어변환
 public class Solution5 {
 	static int minCnt = Integer.MAX_VALUE;
 
