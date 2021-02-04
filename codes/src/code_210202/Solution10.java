@@ -1,5 +1,5 @@
 package code_210202;
-// 10. 구명보트
+// 10. 구명보트 
 import java.util.Arrays;
 
 //최솟값+최대값이 limit보다 작거나 같아야 두명이서 탈 수 있고, 아닌경우에는 혼자 탄다. 
