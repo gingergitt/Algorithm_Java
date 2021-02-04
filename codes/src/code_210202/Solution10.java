@@ -11,7 +11,7 @@ public class Solution10 {
 		int[] people = { 70, 50, 80, 50 };
 		int[] people2 = { 70, 80, 50 };
 		int limit = 100;
-		System.out.println("people  limit return");
+		System.out.println("people  limit  return");
 		System.out.println("-------------------------------");
 		System.out.println(Arrays.toString(people)+" "+limit+" "+solution(people, limit));
 		System.out.println(Arrays.toString(people2)+" "+limit+" "+solution(people2, limit));
