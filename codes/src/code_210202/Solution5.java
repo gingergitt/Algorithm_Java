@@ -1,6 +1,7 @@
 package code_210202;
 
 import java.util.Arrays;
+
 // 5.단어변환
 public class Solution5 {
 	static int minCnt = Integer.MAX_VALUE;
@@ -10,22 +11,23 @@ public class Solution5 {
 		String begin = "hit";
 		String target = "cog";
 		String[] words = { "hot", "dot", "dog", "lot", "log", "cog" };
-		String[] words2 = { "hot", "dot", "dog", "lot", "log" };
+//		String[] words2 = { "hot", "dot", "dog", "lot", "log" };
 		boolean[] visitedNode = new boolean[words.length];
-//		dfs(visitedNode, 0, begin, target, words);
-		dfs(visitedNode, 0, begin, target, words2);
+
+		dfs(visitedNode,0,begin,target,words);
+//		dfs(visitedNode2, 0, begin, target, words2);
 		// 해당 단어가 없는 경우 0을 출력한다.
 		if (minCnt == Integer.MAX_VALUE) {
 			minCnt = 0;
 		}
-		System.out.println("begin="+begin+" "+"target="+target);
-		System.out.println("words="+Arrays.toString(words2)+"  return="+minCnt);
-
+		System.out.println("begin=" + begin + " " + "target=" + target);
+		System.out.println("words=" + Arrays.toString(words) + "  return=" + minCnt);
 	}
 
-	public static void dfs(boolean[] visitedNode, int cnt, String begin, String target, 
-			String[] words) {
- 
+	
+
+	public static void dfs(boolean[] visitedNode, int cnt, String begin, String target, String[] words) {
+
 		// target과 일치하면 minCnt갱신
 		if (begin.equals(target)) {
 			if (minCnt > cnt)
